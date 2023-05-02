@@ -8,7 +8,7 @@ header{
     background-color: azure;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
 }
-body#index{
+body.index{
     background-color: #34A56F;
     margin:-60px 70px 0px;
     background-image:url("earth.jpg");
@@ -42,25 +42,24 @@ header ul{
 }
 footer#about{
     background-image: url(apexbanner.png);
-    /* image taken from google, ea.com from the apex maps section */
-    background-repeat: none;
-    background-size: cover;
+    /* image taken from google, https://www.ea.com/games/apex-legends/maps#storm-point */
+    background-repeat: no-repeat;
     background-position: center;
     border-style: solid;
     border-color: black;
     border-width: 5px;
 }
-footer#sp{
+footer.sp{
     background-image: url(splogo.png);
-    /* image taken from google */
+    /* image taken from google, https://logovectordl.com/singapore-polytechnic-logo-vector-svg/*/
     background-position: center;
     border-style: solid;
     border-color: black;
     border-width: 5px;
 }
-footer#save{
+footer.save{
     background-image: url(greenery.jpg);
-    /* image taken by google, lush greenery adobe image */
+    /* image taken by google, https://stock.adobe.com/sg/search?k=acacia%20leaves*/
     border-style: solid;
     border-color: black;
     border-width: 5px;
@@ -68,7 +67,7 @@ footer#save{
 
 
 /* video format */
-iframe#index{
+iframe.index{
     width:900px;
     height: 500px;
     display: block;
@@ -82,7 +81,7 @@ video#workout{
     margin-left: auto;
     margin-right: auto;
 }
-iframe#apex{
+iframe.apex{
     width: 550px;
     height: 350px;
     padding: 25px;
@@ -100,7 +99,7 @@ img#me{
     margin-left: auto;
     margin-right: auto;
 }
-img#apex{
+img.apex{
     width: 1300px;
     height: 500px;
     border-style: groove;
@@ -109,7 +108,7 @@ img#apex{
     display: flex;
     padding: 10px;
 }
-img#food{
+img.food{
     width: 300px;
     height: 300px;
     display: inline;
@@ -126,7 +125,7 @@ img#SPpledge{
     margin-right: auto;
     background-image: linear-gradient(white,grey);
 }
-img#club{
+img.club{
     height: 300px;
     width: 350px;
     margin-left: 70px;
@@ -147,13 +146,14 @@ img#earth{
     display: flex;
     margin: 0px auto;
 }
-img#solutions{
+img.solutions{
     height: 400px;
     width: 400px;
     display: flex;
     padding: 20px;
     margin: 0px auto;
     background-image: url(earth.jpg);
+    /* same image as before */
 }
 
 
@@ -166,7 +166,7 @@ h1{
     color: goldenrod;
     padding: 5px;
 }
-blockquote#expl{
+blockquote.expl{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
@@ -176,7 +176,6 @@ blockquote#expl{
     padding: 10px;
 }
 footer a:hover{
-    color: rgba(0, 0, 0, 1);
     border-style: solid;
 }
 a:hover{
@@ -184,7 +183,7 @@ a:hover{
 }
 
 /* main page */
-h1#index{
+h1.index{
     font-size: 80px;
 }
 footer a{
@@ -205,7 +204,7 @@ header a:hover{
 
 
 /* about page */
-h1#about{
+h1.about{
     text-align: center;
     font-size: 35px;
     background-color: black;
@@ -213,19 +212,17 @@ h1#about{
 }
 b.about{
     font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
+    background-color: black;
+    color: goldenrod;
+    padding: 10px;
 }
 blockquote#about{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
 }
-b.about{
-    background-color: black;
-    color: goldenrod;
-    padding: 10px;
-}
-b#about{
+b.text{
     color: goldenrod;
     background-color: black;
     text-decoration: underline;
@@ -233,17 +230,17 @@ b#about{
 b#rampart{
     color: #f62fa6;
 }
-b#apex{
+b.apex{
     color: #A4373D;
 }
-a#about{
+a.about{
     font-size: 20px;
     text-decoration: none;
     background-color: black;
     color: gold;
     text-align: center;
 }
-a#song{
+a.song{
     color: black;
 }
 ul li{
@@ -256,7 +253,7 @@ ul li#jpop:before{
     width: 40px;
     background-size: 40px;
     background-image: url(kenshi.jpg);
-    /* image taken from google from artist's channel logo */
+    /* image taken from google from artist's channel logo, https://www.youtube.com/@KenshiYonezu */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -267,7 +264,7 @@ ul li#classic:before{
     width: 40px;
     background-size: 40px;
     background-image: url(classical.jpg);
-    /* taken from classical music channel logo */
+    /* taken from classical music channel logo, https://www.youtube.com/@HALIDONMUSIC */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -278,7 +275,7 @@ ul li#metal:before{
     width: 40px;
     background-size: 40px;
     background-image: url(slipknot.jpg);
-    /* image taken from google from artist's channel logo */
+    /* image taken from google from artist's channel logo, https://www.youtube.com/@slipknot */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -289,7 +286,7 @@ ul li#rock:before{
     width: 40px;
     background-size: 40px;
     background-image: url(rock.jpg);
-    /* image taken from google from ACDC's channel logo */
+    /* image taken from google from ACDC's channel logo, https://www.youtube.com/channel/UCB0JSO6d5ysH2Mmqz5I9rIw */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -300,7 +297,7 @@ ul li#rap::before{
     width: 40px;
     background-size: 40px;
     background-image: url(bbno$.jpg);
-    /* image taken from google from artist's channel logo */
+    /* image taken from google from artist's channel logo, https://www.youtube.com/@bbnomoney */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -311,22 +308,16 @@ ul li#pop:before{
     width: 40px;
     background-size: 40px;
     background-image: url(pop.jpg);
-    /* image taken from google from twentyonepilots's channel logo */
+    /* image taken from google from twentyonepilots's channel logo, https://www.youtube.com/@twentyonepilots */
     background-repeat: no-repeat;
     margin-right: 5px;
-}
-figcaption#apex{
-    text-align: center;
-    font-size: large;
-    background-color: black;
-    color: white;
 }
 
 /* SP page */
 b#splogo{
     color: rgba(234,19,49,255);
 }
-h2#sp{
+h2.sp{
     text-align: center;
     background-color: green ;
     color: black;
@@ -337,7 +328,7 @@ h2#sp{
 b#spenv{
     color: green;
 }
-a#sp{
+a.sp{
     background-color: black;
     color: azure;
     font-size: larger;
@@ -346,14 +337,14 @@ a#sp{
 
 
 /* save earth page */
-h2#earth{
+h2.earth{
     padding: 10px;
     background-color: black;
     color: #1589FF;
     font-size: x-large;
     text-align: center;
 }
-b#earth{
+b.earth{
     background-color: black;
     color: goldenrod;
     padding: 5px;
@@ -362,7 +353,7 @@ b#earth{
 p#expl{
     font-family: monospace;
 }
-b#RRR{
+b.RRR{
     color: limegreen;
     background-color: black;
     padding: 1px;
@@ -374,7 +365,7 @@ ul li#plastic:before{
     width: 100px;
     background-size: 100px;
     background-image: url(noplastic.jpg);
-    /* <!-- taken from google search, no plastics FNP--> */
+    /* <!-- taken from google search, https://www.fnp.com/blog/easy-ways-to-say-no-to-plastic--> */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -385,7 +376,7 @@ ul li#food:before{
     width: 100px;
     background-size: 100px;
     background-image: url(lesswaste.jpg);
-    /* <!-- taken from google search, produce less waste Veganuary--> */
+    /* <!-- taken from google search, https://veganuary.com/reduce-food-waste/--> */
     background-repeat: no-repeat;
     margin-right: 5px;
 }
@@ -396,12 +387,12 @@ ul li#aware:before{
     width: 100px;
     background-size: 100px;
     background-image: url(awareness.jpg);
-    /* <!-- taken from google search, spread environmental awareness--> */
+    /* <!-- taken from google search, https://environment.co/6-ways-to-raise-awareness-about-environmental-issues/--> */
     background-repeat: no-repeat;
     margin-right: 5px;
     
 }
-a#save{
+a.save{
     color: white;
     text-decoration: none;
 }
